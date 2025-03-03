@@ -6,32 +6,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Work+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./Assets/style.css" />
     <title>La cuisine lyonnaise</title>
+    <link rel="stylesheet" href="./Assets/style.css" />
   </head>
   <body>
     <header>
       <!-- header -->
       <h1>Cuisine Lyonnaise</h1>
-      <!-- attention a bien lier les liens en fin de projet -->
-      <ul>
-        <li><a href="AncorIntro">Introduction</a></li>
-        <li><a href="AncorFamousMeal">Plats Célèbres</a></li>
-        <li><a href="AncorRestaurants">Restaurants</a></li>
-      </ul>
+
+      <nav>
+        <ul>
+          <li><a href="#AncorIntro">Introduction</a></li>
+          <li><a href="#AncorFamousMeal">Plats Célèbres</a></li>
+          <li><a href="#AncorRestaurants">Restaurants</a></li>
+        </ul>
+      </nav>
       <p>Découvrez les délices de la gastronomie lyonnaise.</p>
     </header>
     <main>
-      <section>
+      <section id="AncorIntro">
         <!-- la cuisine lyonnaise // introduction -->
         <img
           src="./Assets/img/lyon_night.webp"
@@ -47,7 +43,7 @@
           </p>
         </div>
       </section>
-      <section>
+      <section id="AncorFamousMeal">
         <!-- Les plats celebres -->
         <h2>Plats Célèbres</h2>
 
@@ -92,7 +88,7 @@
           </article>
         </div>
       </section>
-      <section>
+      <section id="AncorRestaurants">
         <!-- les meilleurs restaurant -->
 
         <h2>Les Meilleurs Restaurants</h2>

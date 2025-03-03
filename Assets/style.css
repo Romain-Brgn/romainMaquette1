@@ -20,7 +20,7 @@ body {
         rgba(30, 30, 30, 0.65),
         rgba(30, 30, 30, 0.65)
       ),
-      url(./Assets/img/lyon.webp);
+      url(img/lyon.webp);
     background-position: center;
     background-size: cover;
     color: white;
@@ -44,6 +44,7 @@ body {
       height: 420px;
       ul {
         width: 50%;
+        margin: auto;
       }
       li {
         font-size: 80%;
@@ -94,23 +95,18 @@ body {
     section:nth-of-type(2) {
       h2 {
         text-align: center;
+        @media (max-width: 758px) {
+          font-size: 1.8rem;
+        }
       }
       div {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         text-align: center;
         @media (max-width: 758px) {
           flex-direction: column;
           justify-content: center;
-          article {
-            max-width: 60vw;
-            margin: auto;
-            margin-bottom: 30px;
-            box-shadow: 0 1px 2px rgb(165, 165, 165);
-          }
-          h2 {
-            font-size: 1.8rem;
-          }
           h3 {
             margin-top: 0;
             font-size: 1.4rem;
@@ -126,11 +122,17 @@ body {
           object-fit: cover;
         }
         article {
-v{text-align: center;}          width: 300px;
+          width: 300px;
           border: 1px lightgrey solid;
 
           padding: 15px 25px 15px;
           background-color: rgb(247, 247, 247);
+          @media (max-width: 758px) {
+            max-width: 60vw;
+            margin: auto;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 2px rgb(165, 165, 165);
+          }
           &:hover {
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             scale: 1.02;
