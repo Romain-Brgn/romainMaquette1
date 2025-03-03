@@ -126,8 +126,7 @@ body {
           object-fit: cover;
         }
         article {
-          width: 380px;
-          min-width: 150px;
+v{text-align: center;}          width: 300px;
           border: 1px lightgrey solid;
 
           padding: 15px 25px 15px;
